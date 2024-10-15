@@ -1,0 +1,32 @@
+2020-03-27
+
+---CHANGES---
+* added column "cord_uid" to metadata file (this persistent identifier is a 8-char alphanumeric string unique to each entry)
+* added column "url" to metadata file (URL to paper landing page where available, usually DOI/PMC/Pubmed URL)
+* normalized publication date, DOIs
+* adjusted deduplication logic slightly (affects 3 papers)
+* removed some entries that correspond to indices or table of contents
+
+---SUMMARY---
+total metadata rows: 45774
+biorxiv_medrxiv: 1053 full text (new: 194, removed: 26)
+comm_use_subset: 9315 full text (new: 210, removed: 13)
+custom_license: 20657 full text (new: 4218, removed: 520)
+noncomm_use_subset: 2350 full text (new: 6, removed: 9)
+
+---------------------------
+2020-03-20
+
+---CHANGES---
+* normalized doi, authors, title, abstract strings
+* merged redundant rows in metadata file on doi, pmcid, and pubmed_id
+* metadata sha column can now include multiple files (some PMC files have multiple associated PDFs)
+* added column in metadata file "full_text_file" to signal the tar.gz file in which the full text json resides
+
+---SUMMARY---
+total metadata rows: 44220
+biorxiv_medrxiv: 885 full text (new: 110)
+comm_use_subset: 9118 full text (new: 128)
+custom_license: 16959 full text (new: 15533)
+noncomm_use_subset: 2353 full text (new: 385)
+
